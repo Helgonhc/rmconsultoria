@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | RM TST e Bombeiro Civil</title>
+    <meta name="description"
+        content="Solicite um orçamento para consultoria em SST, PGR, Laudos Técnicos e Prevenção de Incêndio. Fale diretamente com Rodrigo Marins.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#050C1A',
+                        'primary-light': '#0D1B36',
+                        accent: '#FACC15',
+                        danger: '#EF4444',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen justify-between pt-20">
+    <nav class="fixed w-full z-50 glass-nav top-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-4 cursor-pointer group">
+                <div
+                    class="bg-gradient-to-br from-danger to-accent p-3 rounded-2xl shadow-2xl group-hover:rotate-6 transition-all duration-500 ring-2 ring-white/20">
+                    <i class="fas fa-helmet-safety text-white text-3xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        class="text-3xl font-black text-white leading-none tracking-tight group-hover:text-accent transition-colors">RM
+                        CONSULTORIA</span>
+                    <span class="text-[11px] font-bold text-accent uppercase tracking-[0.3em] mt-1 italic">TST e
+                        Bombeiro CIVIL</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-10 font-bold text-xs tracking-widest text-white">
+                <a href="index.html" class="nav-link font-black">INÍCIO</a>
+                <a href="pgr.html" class="nav-link font-black">PGR / LAUDOS</a>
+                <a href="normas.html" class="nav-link font-black">NORMAS E AVCB</a>
+                <a href="treinamentos.html" class="nav-link font-black">TREINAMENTOS</a>
+                <a href="contato.html"
+                    class="btn-premium px-8 py-3 rounded-full font-extrabold shadow-xl text-primary">ORÇAMENTO</a>
+            </div>
+            <button class="lg:hidden text-2xl text-white p-2" onclick="toggleMenu()"><i
+                    class="fas fa-bars-staggered"></i></button>
+        </div>
+    </nav>
+
+    <main class="bg-primary mesh-bg py-32 min-h-screen">
+        <div class="container mx-auto px-6">
+            <div
+                class="bg-white/5 backdrop-blur-xl rounded-3xl lg:rounded-[5rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col lg:flex-row border-2 border-white/10 glow-border">
+                <div class="lg:w-1/2 bg-primary/80 p-8 lg:p-20 text-white relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-[300px] lg:w-[500px] h-[300px] lg:h-[500px] bg-danger/20 rounded-full filter blur-[80px] lg:blur-[120px] -translate-y-1/2 translate-x-1/2">
+                    </div>
+                    <div class="relative z-10">
+                        <span
+                            class="text-accent font-black tracking-[0.4em] lg:tracking-[0.6em] text-xs uppercase mb-6 lg:mb-8 block border-l-4 border-accent pl-4 animate-float">Atendimento
+                            Especialista</span>
+                        <h2
+                            class="text-4xl lg:text-6xl font-black mb-8 lg:mb-10 tracking-tighter leading-none italic text-glow-gold">
+                            Fale
+                            com<br>Rodrigo
+                            Marins.</h2>
+                        <p class="text-xl lg:text-2xl text-slate-400 mb-12 lg:mb-20 font-black leading-tight italic">
+                            Consultoria direta em
+                            Segurança do Trabalho e Prevenção de Incêndio.</p>
+
+                        <div class="space-y-8 lg:space-y-12">
+                            <a href="https://wa.me/5519992751440" target="_blank"
+                                class="flex items-center space-x-6 lg:space-x-8 group">
+                                <div
+                                    class="w-16 h-16 lg:w-20 lg:h-20 bg-white/10 rounded-2xl lg:rounded-[2rem] flex items-center justify-center text-amber-400 border-2 border-white/10 group-hover:bg-amber-400 group-hover:text-primary transition-all shadow-2xl scale-110">
+                                    <i class="fab fa-whatsapp text-3xl lg:text-4xl"></i>
+                                </div>
+                                <div>
+                                    <p
+                                        class="text-[9px] lg:text-[10px] font-black uppercase text-slate-500 mb-2 tracking-widest">
+                                        WhatsApp Corporativo</p>
+                                    <p class="text-xl lg:text-3xl font-black text-white tracking-tighter">(19) 9
+                                        9275-1440</p>
+                                </div>
+                            </a>
+                            <div class="flex items-center space-x-6 lg:space-x-8 group">
+                                <div
+                                    class="w-16 h-16 lg:w-20 lg:h-20 bg-white/10 rounded-2xl lg:rounded-[2rem] flex items-center justify-center text-red-500 border-2 border-white/10 group-hover:bg-red-600 group-hover:text-white transition-all shadow-2xl scale-110">
+                                    <i class="fas fa-envelope text-2xl lg:text-3xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p
+                                        class="text-[9px] lg:text-[10px] font-black uppercase text-slate-500 mb-2 tracking-widest">
+                                        Email Comercial</p>
+                                    <p
+                                        class="text-lg lg:text-xl font-black text-white italic break-all underline decoration-red-600">
+                                        rodrigomarins34@hotmail.com</p>
+                                </div>
+                            </div>
+
+                            <!-- Instagram Integration -->
+                            <a href="https://www.instagram.com/rodrigo_2026marins?utm_source=qr&igsh=MXI2eGsxNWhnMXh0Yw=="
+                                target="_blank" class="flex items-center space-x-6 lg:space-x-8 group">
+                                <div
+                                    class="w-16 h-16 lg:w-20 lg:h-20 bg-white/10 rounded-2xl lg:rounded-[2rem] flex items-center justify-center text-pink-500 border-2 border-white/10 group-hover:bg-gradient-to-tr group-hover:from-purple-600 group-hover:to-pink-500 group-hover:text-white transition-all shadow-2xl scale-110">
+                                    <i class="fab fa-instagram text-3xl lg:text-4xl"></i>
+                                </div>
+                                <div>
+                                    <p
+                                        class="text-[9px] lg:text-[10px] font-black uppercase text-slate-500 mb-2 tracking-widest">
+                                        Siga nossas atualizações</p>
+                                    <p class="text-xl lg:text-3xl font-black text-white tracking-tighter italic">
+                                        @rodrigo_2026marins</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 p-8 lg:p-20 bg-white shadow-2xl">
+                    <form id="contactForm" class="space-y-6 lg:space-y-10">
+                        <div class="space-y-4">
+                            <label class="text-xs font-black text-slate-900 uppercase tracking-widest">Empresa /
+                                Requisitante</label>
+                            <input type="text"
+                                class="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl lg:rounded-3xl p-5 lg:p-7 outline-none font-black text-slate-900 focus:ring-4 focus:ring-amber-400/20 focus:border-amber-400 transition-all shadow-sm"
+                                placeholder="Ex: Indústria XYZ Ltda">
+                        </div>
+                        <div class="space-y-4">
+                            <label
+                                class="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-3">
+                                <i class="fas fa-clipboard-list text-red-600"></i>
+                                Demanda Técnica
+                            </label>
+                            <div class="relative group">
+                                <select id="demandaSelect" onchange="toggleOutroField()"
+                                    class="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl lg:rounded-3xl p-5 lg:p-7 outline-none font-black text-slate-900 shadow-sm cursor-pointer border-l-8 border-red-600 focus:border-red-600 transition-all appearance-none pr-20">
+                                    <option value="avcb">AVCB / CLCB (Bombeiro Civil)</option>
+                                    <option value="pgr">PGR / Laudos (TST)</option>
+                                    <option value="treinamentos">Treinamentos Técnicos</option>
+                                    <option value="workshop">Workshop Oficina</option>
+                                    <option value="higiene">Higiene Ocupacional</option>
+                                    <option value="outro">Outro (Especifique abaixo)</option>
+                                </select>
+                                <div class="absolute right-8 top-1/2 -translate-y-1/2 pointer-events-none text-red-600">
+                                    <i class="fas fa-chevron-down text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Campo Outro (Oculto por padrão) -->
+                        <div id="outroDemandContainer" class="space-y-4 hidden animate-fade-in">
+                            <label
+                                class="text-xs font-black text-slate-900 uppercase tracking-widest text-red-600">Especifique
+                                sua necessidade</label>
+                            <input type="text" id="outroDemandInput"
+                                class="w-full bg-slate-50 border-2 border-red-200 rounded-2xl lg:rounded-3xl p-5 lg:p-7 outline-none font-black text-slate-900 focus:ring-4 focus:ring-red-400/10 focus:border-red-600 transition-all shadow-sm"
+                                placeholder="Descreva brevemente o serviço desejado...">
+                        </div>
+
+                        <div class="space-y-4">
+                            <label class="text-xs font-black text-slate-900 uppercase tracking-widest">Breve histórico
+                                da necessidade</label>
+                            <textarea rows="4"
+                                class="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl lg:rounded-3xl p-5 lg:p-7 outline-none font-black text-slate-900 focus:ring-4 focus:ring-amber-400/20 focus:border-amber-400 transition-all shadow-sm"
+                                placeholder="Como podemos blindar sua operação hoje?"></textarea>
+                        </div>
+                        <button type="button" onclick="handleSubmit()"
+                            class="btn-premium w-full py-6 lg:py-8 rounded-[2rem] font-black text-base lg:text-lg uppercase tracking-[0.3em] shadow-[0_30px_60px_-15px_rgba(197,160,89,0.5)] transform hover:scale-[1.03] transition-all flex items-center justify-center space-x-6 text-primary mt-8 lg:mt-12">
+                            <span>Solicitar Consultoria</span>
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </button>
+                    </form>
+                    <div id="successMsg"
+                        class="hidden mt-12 p-10 bg-green-50 text-green-900 rounded-[3rem] border-4 border-green-200 text-center font-black text-xs uppercase tracking-[0.3em] flex flex-col items-center gap-6 animate-fade-in">
+                        <i class="fas fa-shield-check text-5xl"></i>
+                        <span class="italic">Solicitação enviada com sucesso ao especialista.</span>
+                    </div>
+
+                    <script>
+                        function toggleOutroField() {
+                            const select = document.getElementById('demandaSelect');
+                            const container = document.getElementById('outroDemandContainer');
+                            if (select.value === 'outro') {
+                                container.classList.remove('hidden');
+                            } else {
+                                container.classList.add('hidden');
+                            }
+                        }
+
+                        function handleSubmit() {
+                            const empresa = document.querySelector('input[placeholder="Ex: Indústria XYZ Ltda"]').value;
+                            const demandaSelect = document.getElementById('demandaSelect');
+                            const demanda = demandaSelect.options[demandaSelect.selectedIndex].text;
+                            const outroInfo = document.getElementById('outroDemandInput').value;
+                            const historico = document.querySelector('textarea').value;
+
+                            let body = `Olá Rodrigo, %0D%0A%0D%0A`;
+                            body += `Gostaria de solicitar uma consultoria técnica.%0D%0A%0D%0A`;
+                            body += `--- DADOS DA SOLICITAÇÃO ---%0D%0A`;
+                            body += `Empresa/Requisitante: ${empresa}%0D%0A`;
+                            body += `Demanda Principal: ${demanda}%0D%0A`;
+
+                            if (demandaSelect.value === 'outro') {
+                                body += `Especificação: ${outroInfo}%0D%0A`;
+                            }
+
+                            body += `%0D%0AHistórico/Necessidade: %0D%0A${historico}%0D%0A%0D%0A`;
+                            body += `Aguardamos seu contato técnico.`;
+
+                            const subject = encodeURIComponent(`Solicitação de Consultoria - ${empresa}`);
+                            const mailtoLink = `mailto:rodrigomarins34@hotmail.com?subject=${subject}&body=${body}`;
+
+                            // Mostrar sucesso na tela
+                            document.getElementById('contactForm').classList.add('hidden');
+                            document.getElementById('successMsg').classList.remove('hidden');
+
+                            // Abrir cliente de email
+                            window.location.href = mailtoLink;
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-slate-400 py-16 border-t border-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-8 mb-10">
+                <a href="https://wa.me/5519992751440" target="_blank"
+                    class="text-white hover:text-accent transition-colors text-2xl"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rodrigo_2026marins?utm_source=qr&igsh=MXI2eGsxNWhnMXh0Yw=="
+                    target="_blank" class="text-white hover:text-pink-500 transition-colors text-2xl"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:rodrigomarins34@hotmail.com"
+                    class="text-white hover:text-red-500 transition-colors text-2xl"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-white font-black text-sm mb-6 uppercase tracking-[0.3em] italic">
+                rodrigomarins34@hotmail.com</p>
+            <p class="text-[10px] font-black uppercase tracking-[0.5em] text-slate-600 italic">© 2025 RM
+                CONSULTORIA - TST e Bombeiro Civil.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

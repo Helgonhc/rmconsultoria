@@ -1,0 +1,12 @@
+node_modules/
+.vscode/
+*.log
+.gemini/
+.agent/
+*.webp
+*.png
+!img/*.png
+!img/*.jpg
+!img/*.webp
+!img/*.svg
+!img/*.gif

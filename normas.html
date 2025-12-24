@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normas e AVCB | RM TST e Bombeiro Civil</title>
+    <meta name="description"
+        content="AVCB, CLCB e conformidade com Normas Regulamentadoras (NRs). Consultoria técnica especializada com Rodrigo Marins - TST e Bombeiro Civil.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#050C1A',
+                        'primary-light': '#0D1B36',
+                        accent: '#FACC15',
+                        danger: '#EF4444',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen justify-between pt-20">
+    <nav class="fixed w-full z-50 glass-nav top-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-4 cursor-pointer group">
+                <div
+                    class="bg-gradient-to-br from-danger to-accent p-3 rounded-2xl shadow-2xl group-hover:rotate-6 transition-all duration-500 ring-2 ring-white/20">
+                    <i class="fas fa-helmet-safety text-white text-3xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        class="text-3xl font-black text-white leading-none tracking-tight group-hover:text-accent transition-colors">RM
+                        CONSULTORIA</span>
+                    <span class="text-[11px] font-bold text-accent uppercase tracking-[0.3em] mt-1 italic">TST e
+                        Bombeiro CIVIL</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-10 font-bold text-xs tracking-widest text-white">
+                <a href="index.html" class="nav-link font-black">INÍCIO</a>
+                <a href="pgr.html" class="nav-link font-black">PGR / LAUDOS</a>
+                <a href="normas.html" class="nav-link active font-black">NORMAS E AVCB</a>
+                <a href="treinamentos.html" class="nav-link font-black">TREINAMENTOS</a>
+                <a href="contato.html"
+                    class="btn-premium px-8 py-3 rounded-full font-extrabold shadow-xl text-primary">ORÇAMENTO</a>
+            </div>
+            <button class="lg:hidden text-2xl text-white p-2" onclick="toggleMenu()"><i
+                    class="fas fa-bars-staggered"></i></button>
+        </div>
+    </nav>
+
+    <main class="mesh-bg min-h-screen">
+        <!-- AVCB / FIRE SAFETY DETAIL -->
+        <section class="py-24 container mx-auto px-6 relative">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <!-- Visual Layered -->
+                <div class="lg:w-1/2 order-2 lg:order-1 relative" data-aos="zoom-in">
+                    <div
+                        class="relative z-10 hover-reveal-img rounded-[4rem] shadow-2xl border-2 border-white/10 overflow-hidden group">
+                        <img src="img/fire_safety.png" alt="Combate a Incêndio"
+                            class="w-full h-[600px] object-cover group-hover:scale-110 transition-transform duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Overlapping Glass Card -->
+                    <div
+                        class="absolute -top-10 -right-10 glass-panel-heavy p-8 rounded-[3rem] border-2 border-white/10 z-20 animate-float">
+                        <div class="text-3xl font-black text-white italic">AVCB</div>
+                        <p class="text-[8px] font-black text-accent uppercase tracking-widest">Prontidão Técnica</p>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:w-1/2 order-1 lg:order-2" data-aos="fade-left">
+                    <div
+                        class="inline-flex items-center space-x-3 bg-white/5 backdrop-blur-2xl px-6 py-3 rounded-full mb-8 border border-white/10 shadow-2xl animate-float">
+                        <span class="tech-dot"></span>
+                        <span class="text-[10px] font-black uppercase tracking-[0.4em] text-danger">Operacional Contra
+                            Incêndio</span>
+                    </div>
+                    <h1
+                        class="text-6xl md:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tighter italic text-glow-red">
+                        AVCB e <br> Regularização.
+                    </h1>
+                    <p
+                        class="text-2xl text-slate-300 leading-relaxed font-black mb-12 italic border-l-8 border-accent pl-8">
+                        Unindo a visão prevencionista do TST com a <span
+                            class="text-white underline decoration-danger">prontidão operacional</span> do Bombeiro
+                        Civil.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- SYSTEMS INVENTORY (NEW) -->
+        <section class="py-24 bg-slate-900 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-16 items-center mb-24">
+                    <div class="lg:w-1/2" data-aos="fade-right">
+                        <span class="text-accent font-black tracking-[0.5em] text-xs uppercase mb-6 block">Engenharia de
+                            Proteção</span>
+                        <h2 class="text-5xl md:text-7xl font-black text-white mb-8 tracking-tighter italic">Sistemas de
+                            Combate.</h2>
+                        <p
+                            class="text-xl text-slate-400 font-bold leading-relaxed italic border-l-4 border-accent pl-6">
+                            Instalação, manutenção e consultoria técnica de equipamentos vitais para o AVCB.</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Hidrantes -->
+                    <div class="group relative rounded-[3rem] overflow-hidden aspect-square desire-glow"
+                        data-aos="fade-up">
+                        <img src="img/hidrante_detail.png" alt="Inspecão de Hidrantes"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-10 left-10 right-10">
+                            <i class="fas fa-faucet-drip text-accent text-4xl mb-6 block"></i>
+                            <h3 class="text-3xl font-black text-white italic mb-4">Hidrantes e Mangueiras</h3>
+                            <ul class="text-[10px] space-y-2 text-slate-300 font-black uppercase tracking-widest">
+                                <li><i class="fas fa-check text-accent mr-2"></i> Teste de Estanqueidade</li>
+                                <li><i class="fas fa-check text-accent mr-2"></i> Empatação e Vedações</li>
+                                <li><i class="fas fa-check text-accent mr-2"></i> Verificação de Barriletes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Sinalização -->
+                    <div class="group relative rounded-[3rem] overflow-hidden aspect-square desire-glow"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <img src="img/sinalizacao_detail.png" alt="Sinalização de Emergência"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-10 left-10 right-10">
+                            <i class="fas fa-person-running text-accent text-4xl mb-6 block"></i>
+                            <h3 class="text-3xl font-black text-white italic mb-4">Placas e Sinalização</h3>
+                            <ul class="text-[10px] space-y-2 text-slate-300 font-black uppercase tracking-widest">
+                                <li><i class="fas fa-check text-accent mr-2"></i> Fotoluminescência Técnica</li>
+                                <li><i class="fas fa-check text-accent mr-2"></i> Mapas de Rota de Fuga</li>
+                                <li><i class="fas fa-check text-accent mr-2"></i> Normativa IT e NBR</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Alarmes -->
+                    <div class="group relative rounded-[3rem] overflow-hidden aspect-square desire-glow"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <img src="img/fire_prevention_tech.png" alt="Alarmes e Detecção"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-10 left-10 right-10">
+                            <i class="fas fa-bell text-accent text-4xl mb-6 block"></i>
+                            <h3 class="text-3xl font-black text-white italic mb-4">Alarmes e Detecção</h3>
+                            <ul class="text-[10px] space-y-2 text-slate-300 font-black uppercase tracking-widest">
+                                <li><i class="fas fa-check text-accent mr-2"></i> Centrais e Sensores</li>
+                                <li><i class="fas fa-check text-accent mr-2"></i> Iluminação de Emergência</li>
+                                <li><i class="fas fa-check text-accent mr-2"></i> Testes Operacionais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETAILED NRs -->
+        <section class="py-32 container mx-auto px-6">
+            <div class="text-center mb-24" data-aos="fade-up">
+                <span class="text-primary font-black tracking-[0.5em] text-xs uppercase mb-6 block">Manual Normativo
+                    TST</span>
+                <h2 class="text-6xl font-black text-slate-900 mb-10 tracking-tighter italic leading-none">
+                    Normas<br>Regulamentadoras.</h2>
+                <div class="w-48 h-2 bg-gradient-to-r from-red-600 to-amber-400 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- NR 01 -->
+                <div class="group p-8 lg:p-14 rounded-[3rem] lg:rounded-[4rem] bg-primary text-white border-4 border-slate-700 hover:border-red-600 transition-all shadow-2xl relative overflow-hidden desire-glow"
+                    data-aos="fade-up">
+                    <img src="img/nr01_detail.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none">
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-between mb-10">
+                            <div class="text-7xl font-black text-white/10 italic">01</div>
+                            <span
+                                class="text-[11px] font-black uppercase tracking-widest bg-red-600 text-white px-6 py-3 rounded-2xl shadow-xl italic">ESTRATÉGIA</span>
+                        </div>
+                        <h3 class="text-4xl font-black text-white mb-8 tracking-tighter italic leading-none">Gestão de
+                            SST (PGR/GRO)</h3>
+                        <p
+                            class="text-slate-300 text-sm leading-relaxed font-bold uppercase tracking-widest italic border-l-4 border-red-600 pl-6 mb-8">
+                            Identificação de perigos e controle de riscos com rigor técnico.</p>
+
+                        <div class="tech-detail-list">
+                            <div class="tech-detail-item"><i class="fas fa-check-double"></i> Mapeamento Geral de
+                                Perigos</div>
+                            <div class="tech-detail-item"><i class="fas fa-check-double"></i> Matriz de Risco
+                                Ocupacional</div>
+                            <div class="tech-detail-item"><i class="fas fa-check-double"></i> Auditoria de Conformidade
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NR 10 -->
+                <div class="group p-8 lg:p-14 rounded-[3rem] lg:rounded-[4rem] bg-primary text-white border-4 border-slate-700 hover:border-amber-500 transition-all shadow-2xl relative overflow-hidden desire-glow"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/nr10_detail.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none">
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-between mb-10">
+                            <div class="text-7xl font-black text-white/10 italic">10</div>
+                            <span
+                                class="text-[11px] font-black uppercase tracking-widest bg-amber-500 text-primary px-6 py-3 rounded-2xl shadow-xl italic font-black">ELÉTRICA</span>
+                        </div>
+                        <h3 class="text-4xl font-black text-white mb-8 tracking-tighter italic leading-none">Risco
+                            Elétrico</h3>
+                        <p
+                            class="text-slate-300 text-sm leading-relaxed font-bold uppercase tracking-widest italic border-l-4 border-amber-500 pl-6 mb-8">
+                            Segurança em instalações e prontuários técnicos de inspeção.</p>
+
+                        <div class="tech-detail-list">
+                            <div class="tech-detail-item"><i class="fas fa-bolt"></i> Auditoria de Prontuário PIE</div>
+                            <div class="tech-detail-item"><i class="fas fa-bolt"></i> Diagramas e Laudos de Aterramento
+                            </div>
+                            <div class="tech-detail-item"><i class="fas fa-bolt"></i> RTI - Inspeção Termográfica</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NR 18 -->
+                <div class="group p-8 lg:p-14 rounded-[3rem] lg:rounded-[4rem] bg-primary text-white border-4 border-slate-700 hover:border-orange-600 transition-all shadow-2xl relative overflow-hidden desire-glow"
+                    data-aos="fade-up">
+                    <img src="img/nr18_detail.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none">
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-between mb-10">
+                            <div class="text-7xl font-black text-white/10 italic">18</div>
+                            <span
+                                class="text-[11px] font-black uppercase tracking-widest bg-orange-600 text-white px-6 py-3 rounded-2xl shadow-xl italic">OBRAS</span>
+                        </div>
+                        <h3 class="text-4xl font-black text-white mb-8 tracking-tighter italic leading-none">Canteiros
+                            de Obra</h3>
+                        <p
+                            class="text-slate-300 text-sm leading-relaxed font-bold uppercase tracking-widest italic border-l-4 border-orange-600 pl-6 mb-8">
+                            Gestão de segurança especializada em canteiros de alta complexidade.</p>
+
+                        <div class="tech-detail-list">
+                            <div class="tech-detail-item"><i class="fas fa-crane"></i> PCMAT e Gestão de Riscos</div>
+                            <div class="tech-detail-item"><i class="fas fa-crane"></i> Laudos de Equipamentos Móveis
+                            </div>
+                            <div class="tech-detail-item"><i class="fas fa-crane"></i> Treinamento Admissional Técnico
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NR 33/35 -->
+                <div class="group p-8 lg:p-14 rounded-[3rem] lg:rounded-[4rem] bg-primary text-white border-4 border-accent shadow-2xl relative overflow-hidden desire-glow pulse-desire"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/nr33_35_detail.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none">
+                    <div class="relative z-10">
+                        <div class="nr-badge nr-badge-danger">Segurança Crítica</div>
+                        <div class="flex items-center justify-between mb-10">
+                            <div class="text-7xl font-black text-white/10 italic">33/35</div>
+                            <span
+                                class="text-[11px] font-black uppercase tracking-widest bg-accent text-primary px-6 py-3 rounded-2xl shadow-xl italic font-black">CRÍTICO</span>
+                        </div>
+                        <h3 class="text-4xl font-black mb-8 tracking-tighter italic leading-none heading-desire">Altura
+                            e Espaço Confinado
+                        </h3>
+                        <p
+                            class="text-slate-300 text-sm leading-relaxed font-bold uppercase tracking-widest italic border-l-4 border-accent pl-6 mb-8">
+                            Liberação técnica e resgate para atividades de alto impacto.</p>
+
+                        <div class="tech-detail-list">
+                            <div class="tech-detail-item"><i class="fas fa-mountain"></i> PET - Permissão de Entrada
+                            </div>
+                            <div class="tech-detail-item"><i class="fas fa-mountain"></i> Análise de Linha de Vida</div>
+                            <div class="tech-detail-item"><i class="fas fa-mountain"></i> Planos de Resgate Técnico
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-slate-400 py-16 border-t border-white/10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-8 mb-10">
+                <a href="https://wa.me/5519992751440" target="_blank"
+                    class="text-white hover:text-accent transition-colors text-2xl"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rodrigo_2026marins?utm_source=qr&igsh=MXI2eGsxNWhnMXh0Yw=="
+                    target="_blank" class="text-white hover:text-pink-500 transition-colors text-2xl"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:rodrigomarins34@hotmail.com"
+                    class="text-white hover:text-red-500 transition-colors text-2xl"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-white font-black text-sm mb-6 uppercase tracking-[0.3em] italic">
+                rodrigomarins34@hotmail.com</p>
+            <p class="text-[10px] font-black uppercase tracking-[0.5em] text-slate-600 italic">© 2025 RM
+                CONSULTORIA - TST e Bombeiro Civil.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
