@@ -45,9 +45,13 @@
             </a>
             <div class="hidden lg:flex items-center space-x-10 font-bold text-xs tracking-widest text-white">
                 <a href="index.html" class="nav-link font-black">INÍCIO</a>
+                <a href="sobre.html" class="nav-link font-black hover:text-accent transition-colors">SOBRE NÓS</a>
                 <a href="pgr.html" class="nav-link font-black">PGR / LAUDOS</a>
                 <a href="normas.html" class="nav-link font-black">NORMAS E AVCB</a>
                 <a href="treinamentos.html" class="nav-link active font-black">TREINAMENTOS</a>
+                <a href="aph-brigada.html"
+                    class="nav-link font-black text-accent border-b border-transparent hover:border-accent">APH &
+                    BRIGADA</a>
                 <a href="contato.html"
                     class="btn-premium px-8 py-3 rounded-full font-extrabold shadow-xl text-primary">ORÇAMENTO</a>
             </div>
@@ -59,10 +63,13 @@
         <div id="mobile-menu"
             class="hidden lg:hidden bg-blue-950 fixed top-[73px] left-0 w-full h-screen z-40 p-10 flex flex-col space-y-8 animate-fade-in">
             <a href="index.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">Início</a>
+            <a href="sobre.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">Sobre Nós</a>
             <a href="pgr.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">PGR / Laudos</a>
             <a href="normas.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">Normas e AVCB</a>
             <a href="treinamentos.html"
                 class="text-2xl font-bold text-white border-b border-white/10 pb-4">Treinamentos</a>
+            <a href="aph-brigada.html" class="text-2xl font-bold text-accent border-b border-accent/30 pb-4">APH &
+                Brigada</a>
             <a href="contato.html" class="btn-premium p-5 rounded-2xl font-black text-lg text-center font-black">Falar
                 Conosco</a>
         </div>
@@ -104,7 +111,8 @@
             </div>
         </section>
 
-        <div class="grid lg:grid-cols-3 gap-6 lg:gap-10 mb-16 lg:mb-24">
+        <!-- QUICK GRID: NORMS (NRs) -->
+        <div class="grid lg:grid-cols-2 gap-6 lg:gap-10 mb-24">
             <!-- NR-35 -->
             <div class="bg-white p-8 lg:p-12 rounded-[3rem] lg:rounded-[4rem] shadow-2xl border-2 border-slate-100 group hover:bg-primary transition-all duration-700"
                 data-aos="fade-up">
@@ -131,21 +139,241 @@
                     class="text-slate-700 group-hover:text-slate-300 text-sm leading-relaxed font-black uppercase tracking-widest italic leading-tight">
                     Vigia, resgate e gestão de atmosferas perigosas.</p>
             </div>
-            <!-- BRIGADA -->
-            <div class="bg-white p-8 lg:p-12 rounded-[3rem] lg:rounded-[4rem] shadow-2xl border-2 border-slate-100 group hover:bg-slate-900 transition-all duration-700"
-                data-aos="fade-up" data-aos-delay="200">
-                <div
-                    class="w-16 h-16 lg:w-20 lg:h-20 bg-slate-900 text-amber-400 rounded-2xl lg:rounded-3xl flex items-center justify-center font-black mb-8 lg:mb-10 text-2xl lg:text-3xl shadow-lg italic">
-                    <i class="fas fa-fire"></i>
-                </div>
-                <h3
-                    class="text-2xl lg:text-3xl font-black text-slate-900 group-hover:text-white mb-6 italic tracking-tighter">
-                    Brigada de Incêndio</h3>
-                <p
-                    class="text-slate-700 group-hover:text-slate-300 text-sm leading-relaxed font-black uppercase tracking-widest italic leading-tight">
-                    Treinamento operacional de brigadistas com emissão de certificados técnicos.</p>
-            </div>
         </div>
+
+        <!-- DEEP DIVE: BRIGADA DE INCÊNDIO -->
+        <section class="mb-32 relative group" data-aos="fade-up">
+            <!-- Background Gradient/Effect -->
+            <div
+                class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800 rounded-[3rem] lg:rounded-[5rem] -rotate-1 transform group-hover:rotate-0 transition-transform duration-700">
+            </div>
+
+            <div
+                class="relative bg-white rounded-[3rem] lg:rounded-[5rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)]">
+                <!-- Header of Section -->
+                <div
+                    class="bg-orange-600 p-8 lg:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 text-white relative overflow-hidden">
+                    <div class="relative z-10 text-center lg:text-left w-full">
+                        <span
+                            class="inline-block py-2 px-4 rounded-full bg-black/20 backdrop-blur-md text-xs font-black uppercase tracking-[0.3em] mb-4 border border-white/20">Elite
+                            Training</span>
+                        <h2 class="text-4xl lg:text-6xl font-black italic tracking-tighter mb-4">BRIGADA DE <br
+                                class="hidden lg:block">INCÊNDIO</h2>
+                        <p class="text-lg lg:text-xl font-medium opacity-90 max-w-2xl">Formação tática para combate
+                            real. Não é apenas um curso, é preparação para o pior cenário.</p>
+                    </div>
+                    <div class="text-8xl opacity-20 absolute -right-10 -bottom-10 rotate-12"><i
+                            class="fas fa-fire-extinguisher"></i></div>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="grid lg:grid-cols-2">
+                    <!-- Tech Specs -->
+                    <div class="p-8 lg:p-16 bg-slate-50">
+                        <h4
+                            class="text-xl font-black text-slate-900 uppercase tracking-widest mb-8 flex items-center gap-3">
+                            <span class="w-8 h-1 bg-orange-600 block"></span> Grade Operacional
+                        </h4>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4 group">
+                                <span
+                                    class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-600 group-hover:text-white transition-colors"><i
+                                        class="fas fa-fw fa-fire"></i></span>
+                                <div>
+                                    <strong class="block text-slate-900 font-bold">Teoria do Fogo & Propagação</strong>
+                                    <span class="text-sm text-slate-600">Física e química da combustão aplicada.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 group">
+                                <span
+                                    class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-600 group-hover:text-white transition-colors"><i
+                                        class="fas fa-fw fa-mask"></i></span>
+                                <div>
+                                    <strong class="block text-slate-900 font-bold">EPI e EPR</strong>
+                                    <span class="text-sm text-slate-600">Uso correto de proteção respiratória
+                                        autônoma.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 group">
+                                <span
+                                    class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-600 group-hover:text-white transition-colors"><i
+                                        class="fas fa-fw fa-running"></i></span>
+                                <div>
+                                    <strong class="block text-slate-900 font-bold">Plano de Abandono</strong>
+                                    <span class="text-sm text-slate-600">Táticas de evacuação de massa e triagem.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Pricing/Plans -->
+                    <div class="p-8 lg:p-16 bg-white border-l border-slate-100">
+                        <h4 class="text-xl font-black text-slate-900 uppercase tracking-widest mb-8">Níveis de Formação
+                        </h4>
+                        <div class="space-y-4">
+                            <!-- Card 1 -->
+                            <div
+                                class="border border-slate-200 rounded-3xl p-6 hover:border-orange-500 hover:shadow-xl transition-all cursor-pointer group relative overflow-hidden">
+                                <div
+                                    class="absolute top-0 right-0 bg-slate-100 text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider text-slate-500">
+                                    Iniciante</div>
+                                <div class="flex justify-between items-end mb-2">
+                                    <h5 class="font-black text-xl text-slate-800 italic">Nível Básico</h5>
+                                    <span class="text-orange-600 font-black text-2xl">4h</span>
+                                </div>
+                                <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-4">Para
+                                    comércio e baixo risco</p>
+                                <ul class="text-sm text-slate-600 space-y-1 mb-4">
+                                    <li><i class="fas fa-check text-green-500 mr-2"></i>Extintores Manuais</li>
+                                    <li><i class="fas fa-check text-green-500 mr-2"></i>Rota de Fuga</li>
+                                </ul>
+                                <a href="https://wa.me/5519992751440?text=Olá,%20tenho%20interesse%20no%20curso%20de%20Brigada%20Básico"
+                                    class="block w-full text-center py-3 rounded-xl bg-slate-900 text-white font-bold text-xs uppercase tracking-widest hover:bg-orange-600 transition-colors">Solicitar
+                                    Proposta</a>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div
+                                class="border-2 border-orange-500 bg-orange-50/50 rounded-3xl p-6 shadow-xl relative overflow-hidden ">
+                                <div
+                                    class="absolute top-0 right-0 bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+                                    Mais Popular</div>
+                                <div class="flex justify-between items-end mb-2">
+                                    <h5 class="font-black text-xl text-slate-900 italic">Nível Intermediário</h5>
+                                    <span class="text-orange-600 font-black text-2xl">8h</span>
+                                </div>
+                                <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-4">Indústrias
+                                    e médio risco</p>
+                                <ul class="text-sm text-slate-600 space-y-1 mb-4">
+                                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Combate com Hidrantes</li>
+                                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Duto de Fumaça</li>
+                                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Primeiros Socorros</li>
+                                </ul>
+                                <a href="https://wa.me/5519992751440?text=Olá,%20tenho%20interesse%20no%20curso%20de%20Brigada%20Intermediário"
+                                    class="block w-full text-center py-3 rounded-xl bg-orange-600 text-white font-bold text-xs uppercase tracking-widest shadow-lg hover:shadow-orange-500/50 hover:bg-orange-500 transition-all">Solicitar
+                                    Proposta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEEP DIVE: APH (SOCORRISTA) -->
+        <section class="mb-32 relative group" data-aos="fade-up">
+            <!-- Background Gradient/Effect -->
+            <div
+                class="absolute inset-0 bg-gradient-to-tl from-rose-900 to-rose-800 rounded-[3rem] lg:rounded-[5rem] rotate-1 transform group-hover:rotate-0 transition-transform duration-700">
+            </div>
+
+            <div
+                class="relative bg-white rounded-[3rem] lg:rounded-[5rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)]">
+                <!-- Header of Section -->
+                <div
+                    class="bg-rose-600 p-8 lg:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 text-white relative overflow-hidden">
+                    <div class="text-8xl opacity-20 absolute -left-10 -bottom-10 -rotate-12"><i
+                            class="fas fa-heart-pulse"></i></div>
+                    <div class="relative z-10 text-center lg:text-right w-full order-last lg:order-first">
+                        <span
+                            class="inline-block py-2 px-4 rounded-full bg-black/20 backdrop-blur-md text-xs font-black uppercase tracking-[0.3em] mb-4 border border-white/20">Life
+                            Saving Skills</span>
+                        <h2 class="text-4xl lg:text-6xl font-black italic tracking-tighter mb-4">APH <br
+                                class="hidden lg:block">SOCORRISTA</h2>
+                        <p class="text-lg lg:text-xl font-medium opacity-90 max-w-2xl ml-auto">Protocolos de Trauma
+                            (PHTLS) e Suporte Básico de Vida (BLS). A qualificação que separa amadores de profissionais.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="grid lg:grid-cols-2">
+                    <!-- Pricing/Plans (Left on APH for variety) -->
+                    <div class="p-8 lg:p-16 bg-white border-r border-slate-100 order-last lg:order-first">
+                        <h4 class="text-xl font-black text-slate-900 uppercase tracking-widest mb-8">Modalidades</h4>
+                        <div class="space-y-4">
+                            <!-- Card 1 -->
+                            <div
+                                class="border border-slate-200 rounded-3xl p-6 hover:border-rose-500 hover:shadow-xl transition-all cursor-pointer group relative">
+                                <div class="flex justify-between items-end mb-2">
+                                    <h5 class="font-black text-xl text-slate-800 italic">Noções Básicas</h5>
+                                    <span class="text-rose-600 font-black text-2xl">8h</span>
+                                </div>
+                                <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-4">Para
+                                    Leigos e Empresas</p>
+                                <ul class="text-sm text-slate-600 space-y-1 mb-4">
+                                    <li><i class="fas fa-check text-green-500 mr-2"></i>RCP (Massagem Cardíaca)</li>
+                                    <li><i class="fas fa-check text-green-500 mr-2"></i>Uso do DEA</li>
+                                    <li><i class="fas fa-check text-green-500 mr-2"></i>Engasgamento</li>
+                                </ul>
+                                <a href="https://wa.me/5519992751440?text=Olá,%20tenho%20interesse%20no%20curso%20de%20APH%20Básico"
+                                    class="block w-full text-center py-3 rounded-xl bg-slate-900 text-white font-bold text-xs uppercase tracking-widest hover:bg-rose-600 transition-colors">Consultar
+                                    Valor</a>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="border-2 border-rose-500 bg-rose-50/50 rounded-3xl p-6 shadow-xl relative ">
+                                <div
+                                    class="absolute top-0 right-0 bg-rose-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+                                    Profissional</div>
+                                <div class="flex justify-between items-end mb-2">
+                                    <h5 class="font-black text-xl text-slate-900 italic">Socorrista Avançado</h5>
+                                    <span class="text-rose-600 font-black text-2xl">40h+</span>
+                                </div>
+                                <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-4">Formação
+                                    Completa</p>
+                                <ul class="text-sm text-slate-600 space-y-1 mb-4">
+                                    <li><i class="fas fa-check text-rose-500 mr-2"></i>Avaliação Primária e Secundária
+                                    </li>
+                                    <li><i class="fas fa-check text-rose-500 mr-2"></i>Traumas e Imobilizações</li>
+                                    <li><i class="fas fa-check text-rose-500 mr-2"></i>Parto de Emergência</li>
+                                </ul>
+                                <a href="https://wa.me/5519992751440?text=Olá,%20tenho%20interesse%20no%20curso%20de%20APH%20Avançado"
+                                    class="block w-full text-center py-3 rounded-xl bg-rose-600 text-white font-bold text-xs uppercase tracking-widest shadow-lg hover:shadow-rose-500/50 hover:bg-rose-500 transition-all">Solicitar
+                                    Proposta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Specs -->
+                    <div class="p-8 lg:p-16 bg-slate-50">
+                        <h4
+                            class="text-xl font-black text-slate-900 uppercase tracking-widest mb-8 flex items-center gap-3 justify-end text-right">
+                            Conteúdo Programático <span class="w-8 h-1 bg-rose-600 block"></span>
+                        </h4>
+                        <ul class="space-y-6 text-right">
+                            <li class="flex items-start gap-4 group justify-end flex-row-reverse">
+                                <span
+                                    class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center flex-shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors"><i
+                                        class="fas fa-fw fa-heartbeat"></i></span>
+                                <div>
+                                    <strong class="block text-slate-900 font-bold">Suporte Básico (BLS)</strong>
+                                    <span class="text-sm text-slate-600">Diretrizes atualizadas da AHA (American Heart
+                                        Association).</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 group justify-end flex-row-reverse">
+                                <span
+                                    class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center flex-shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors"><i
+                                        class="fas fa-fw fa-car-crash"></i></span>
+                                <div>
+                                    <strong class="block text-slate-900 font-bold">Cinemática do Trauma</strong>
+                                    <span class="text-sm text-slate-600">Análise da cena e mecanismo de lesão.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 group justify-end flex-row-reverse">
+                                <span
+                                    class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center flex-shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors"><i
+                                        class="fas fa-fw fa-user-nurse"></i></span>
+                                <div>
+                                    <strong class="block text-slate-900 font-bold">Gerenciamento de Vias Aéreas</strong>
+                                    <span class="text-sm text-slate-600">Cânulas, oxigenoterapia e aspiração.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- WORKSHOP OFICINA (TECHNICAL GRAPHIC) -->
         <div class="bg-white rounded-[3rem] lg:rounded-[5rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] overflow-hidden flex flex-col lg:flex-row border-4 border-slate-50"

@@ -464,3 +464,118 @@ h4,
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent);
 }
+
+/* --- Visual Effects (ECG & Fire) --- */
+
+@keyframes ecg-beat {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    15% {
+        transform: scale(1.25);
+        opacity: 1;
+    }
+
+    30% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    45% {
+        transform: scale(1.15);
+        opacity: 0.8;
+    }
+
+    60% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+.ecg-icon {
+    animation: ecg-beat 2s infinite ease-in-out;
+    display: inline-block;
+}
+
+@keyframes ecg-scroll {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -200px 0;
+    }
+}
+
+.ecg-line-bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" preserveAspectRatio="none"><path d="M0,50 L20,50 L30,20 L40,80 L50,50 L100,50 L110,20 L120,80 L130,50 L500,50" fill="none" stroke="%23F43F5E" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>');
+    background-size: 200px 100%;
+    opacity: 0.6;
+    z-index: 0;
+    transform: translateY(-50%);
+    animation: ecg-scroll 2s linear infinite;
+}
+
+@keyframes fire-rise {
+    0% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-40px) scale(0.5) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+.fire-container {
+    position: relative;
+    display: inline-block;
+}
+
+.fire-particle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 10px;
+    color: #F97316;
+    opacity: 0;
+    animation: fire-rise 2s infinite ease-out;
+    pointer-events: none;
+}
+
+.fire-particle:nth-child(1) {
+    animation-delay: 0s;
+    left: 20%;
+    font-size: 12px;
+}
+
+.fire-particle:nth-child(2) {
+    animation-delay: 0.5s;
+    left: 50%;
+    font-size: 8px;
+}
+
+.fire-particle:nth-child(3) {
+    animation-delay: 1s;
+    left: 80%;
+    font-size: 14px;
+}
+
+.fire-particle:nth-child(4) {
+    animation-delay: 1.5s;
+    left: 40%;
+    font-size: 10px;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | A Nova Era da Segurança</title>
+    <meta name="description"
+        content="Conheça a RM Consultoria. Rodrigo Marins une TST e Bombeiro Civil para trazer uma visão moderna, ágil e sem burocracia para a segurança do trabalho.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#050C1A',
+                        'primary-light': '#0D1B36',
+                        accent: '#FACC15',
+                        danger: '#EF4444',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen justify-between pt-20 bg-slate-50">
+    <nav class="fixed w-full z-50 glass-nav top-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-4 cursor-pointer group">
+                <div
+                    class="bg-gradient-to-br from-danger to-accent p-3 rounded-2xl shadow-2xl group-hover:rotate-6 transition-all duration-500 ring-2 ring-white/20">
+                    <i class="fas fa-helmet-safety text-white text-3xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        class="text-3xl font-black text-white leading-none tracking-tight group-hover:text-accent transition-colors">RM
+                        CONSULTORIA</span>
+                    <span class="text-[11px] font-bold text-accent uppercase tracking-[0.3em] mt-1 italic">TST e
+                        Bombeiro CIVIL</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8 font-bold text-xs tracking-widest text-white">
+                <a href="index.html" class="nav-link font-black hover:text-accent transition-colors">INÍCIO</a>
+                <a href="sobre.html" class="nav-link active font-black text-accent border-b-2 border-accent">SOBRE
+                    NÓS</a>
+                <a href="pgr.html" class="nav-link font-black hover:text-accent transition-colors">PGR / LAUDOS</a>
+                <a href="normas.html" class="nav-link font-black hover:text-accent transition-colors">NORMAS E AVCB</a>
+                <a href="treinamentos.html"
+                    class="nav-link font-black hover:text-accent transition-colors">TREINAMENTOS</a>
+                <a href="aph-brigada.html" class="nav-link font-black hover:text-accent text-accent">APH &
+                    BRIGADA</a>
+                <a href="contato.html"
+                    class="btn-premium px-8 py-3 rounded-full font-extrabold shadow-xl text-primary bg-white hover:bg-accent transition-all transform hover:scale-105">ORÇAMENTO</a>
+            </div>
+            <button class="lg:hidden text-2xl text-white p-2" onclick="toggleMenu()"><i
+                    class="fas fa-bars-staggered"></i></button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-blue-950 fixed top-[73px] left-0 w-full h-screen z-40 p-10 flex flex-col space-y-8 animate-fade-in">
+            <a href="index.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">Início</a>
+            <a href="sobre.html" class="text-2xl font-bold text-accent border-b border-accent/30 pb-4">Sobre Nós</a>
+            <a href="pgr.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">PGR / Laudos</a>
+            <a href="normas.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">Normas e AVCB</a>
+            <a href="treinamentos.html"
+                class="text-2xl font-bold text-white border-b border-white/10 pb-4">Treinamentos</a>
+            <a href="aph-brigada.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">APH &
+                Brigada</a>
+            <a href="contato.html" class="btn-premium p-5 rounded-2xl font-black text-lg text-center font-black">Falar
+                Conosco</a>
+        </div>
+    </nav>
+
+    <main class="min-h-screen">
+        <!-- HERO MANIFESTO -->
+        <header class="relative bg-primary overflow-hidden py-32 lg:py-40">
+            <div class="absolute inset-0 z-0">
+                <div
+                    class="absolute top-0 right-0 w-[800px] h-[800px] bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-danger/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2">
+                </div>
+                <div class="absolute inset-0 bg-grid opacity-10"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <span
+                    class="inline-block py-2 px-6 rounded-full bg-white/5 border border-white/10 text-accent font-black tracking-[0.3em] uppercase mb-8 backdrop-blur-md animate-fade-in-up">
+                    <i class="fas fa-bolt mr-2"></i> Manifesto RM
+                </span>
+                <h1
+                    class="text-5xl lg:text-7xl font-black text-white mb-8 leading-[0.9] italic tracking-tighter animate-fade-in-up delay-100">
+                    A SEGURANÇA <br>
+                    PRECISAVA <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-danger">EVOLUIR.</span>
+                </h1>
+                <p
+                    class="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed font-medium animate-fade-in-up delay-200">
+                    Nascemos para quebrar o ciclo de consultorias burocráticas que entregam papel e ignoram a realidade.
+                    Somos uma empresa nova, com uma visão que as antigas se recusam a ter: <span
+                        class="text-white font-bold">Tecnologia, Agilidade e Operacionalidade.</span>
+                </p>
+            </div>
+        </header>
+
+        <!-- PROFILE SECTION -->
+        <section class="py-24 relative">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                    <!-- Photo Column -->
+                    <div class="lg:w-1/2 relative" data-aos="fade-right">
+                        <div
+                            class="relative z-10 rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] border-[10px] border-white transform rotate-2 hover:rotate-0 transition-all duration-700">
+                            <img src="img/rodrigo_profile.jpg" alt="Rodrigo Marins"
+                                class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105">
+
+                            <!-- Floating Badge -->
+                            <div class="absolute bottom-10 left-0 right-0 text-center">
+                                <div
+                                    class="inline-block bg-primary/90 backdrop-blur-xl px-8 py-4 rounded-2xl border border-white/20 shadow-2xl">
+                                    <h3 class="text-2xl font-black text-white italic">RODRIGO MARINS</h3>
+                                    <p class="text-[10px] font-black text-accent uppercase tracking-[0.3em]">Fundador &
+                                        Especialista</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-10 -left-10 w-32 h-32 bg-accent rounded-full opacity-20 blur-2xl">
+                        </div>
+                        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-danger rounded-full opacity-20 blur-3xl">
+                        </div>
+                    </div>
+
+                    <!-- Bio Text Column -->
+                    <div class="lg:w-1/2" data-aos="fade-left">
+                        <div class="mb-10">
+                            <h2 class="text-6xl font-black text-slate-900 mb-6 italic tracking-tighter leading-none">
+                                A <span class="text-danger">FUSÃO</span> RARA.
+                            </h2>
+                            <div class="w-32 h-2 bg-gradient-to-r from-danger to-accent rounded-full"></div>
+                        </div>
+
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed font-medium text-justify">
+                            No mercado de segurança, você geralmente encontra dois perfis: o técnico que só conhece a
+                            lei e o bombeiro que só conhece a operação. <span class="font-bold text-slate-900">Rodrigo
+                                Marins é a exceção que o mercado exigia.</span>
+                        </p>
+
+                        <p class="text-lg text-slate-600 mb-12 leading-relaxed font-medium text-justify">
+                            Com experiência consolidada atuando tanto na gestão normativa (TST) quanto na linha de
+                            frente de emergências (Bombeiro Civil), fundou a RM Consultoria para preencher uma lacuna
+                            crítica: criar soluções que estejam em conformidade com a lei, mas que funcionem no "mundo
+                            real" quando o alarme toca.
+                        </p>
+
+                        <!-- Credentials Grid -->
+                        <div class="grid grid-cols-2 gap-6">
+                            <div
+                                class="p-6 bg-white rounded-3xl shadow-lg border-2 border-slate-100 hover:border-accent transition-colors group">
+                                <i
+                                    class="fas fa-helmet-safety text-3xl text-slate-300 group-hover:text-accent mb-4 transition-colors"></i>
+                                <h4 class="font-black text-slate-900 uppercase tracking-widest text-xs mb-1">Técnico em
+                                </h4>
+                                <div class="font-bold text-lg text-slate-700 leading-tight">Segurança do Trabalho</div>
+                            </div>
+                            <div
+                                class="p-6 bg-white rounded-3xl shadow-lg border-2 border-slate-100 hover:border-danger transition-colors group">
+                                <i
+                                    class="fas fa-fire-extinguisher text-3xl text-slate-300 group-hover:text-danger mb-4 transition-colors"></i>
+                                <h4 class="font-black text-slate-900 uppercase tracking-widest text-xs mb-1">Bombeiro
+                                </h4>
+                                <div class="font-bold text-lg text-slate-700 leading-tight">Civil Operacional</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION / VISION -->
+        <section class="py-24 bg-primary text-white overflow-hidden relative">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <div data-aos="fade-up">
+                        <h3 class="text-4xl font-black italic mb-8 border-l-4 border-accent pl-6">Por que somos
+                            diferentes?</h3>
+                        <p class="text-slate-400 text-lg leading-relaxed mb-8">
+                            Empresas antigas vendem dificuldades para vender facilidades. Nós vendemos <span
+                                class="text-white font-bold">inteligência</span>. Não temos vícios de mercado. Não temos
+                            processos engessados. Temos fome de resolver.
+                        </p>
+                        <p class="text-slate-400 text-lg leading-relaxed">
+                            A RM Consultoria não é apenas uma "empresa de laudos". Somos seus parceiros estratégicos
+                            para garantir que seu patrimônio e suas vidas estejam blindados contra o imprevisto.
+                        </p>
+                    </div>
+                    <div class="grid gap-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center gap-6 p-6 bg-white/5 rounded-3xl border border-white/10">
+                            <div
+                                class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-primary font-black text-xl">
+                                1</div>
+                            <div>
+                                <h4 class="font-black text-xl italic">Sem "Sopa de Letrinhas"</h4>
+                                <p class="text-sm text-slate-400">Traduzimos as normas para a linguagem do seu negócio.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6 p-6 bg-white/5 rounded-3xl border border-white/10">
+                            <div
+                                class="w-12 h-12 bg-danger rounded-full flex items-center justify-center text-white font-black text-xl">
+                                2</div>
+                            <div>
+                                <h4 class="font-black text-xl italic">Foco no Resultado</h4>
+                                <p class="text-sm text-slate-400">Menos papelada inútil, mais proteção efetiva.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6 p-6 bg-white/5 rounded-3xl border border-white/10">
+                            <div
+                                class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-black text-xl">
+                                3</div>
+                            <div>
+                                <h4 class="font-black text-xl italic">Atendimento Direto</h4>
+                                <p class="text-sm text-slate-400">Você fala com quem resolve, não com robôs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-slate-400 py-16 border-t border-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-8 mb-10">
+                <a href="https://wa.me/5519992751440" target="_blank"
+                    class="text-white hover:text-accent transition-colors text-2xl"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rodrigo_2026marins?utm_source=qr&igsh=MXI2eGsxNWhnMXh0Yw=="
+                    target="_blank" class="text-white hover:text-pink-500 transition-colors text-2xl"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:rodrigomarins34@hotmail.com"
+                    class="text-white hover:text-red-500 transition-colors text-2xl"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="mailto:rodrigomarins34@hotmail.com"
+                class="text-white font-black text-sm mb-6 uppercase tracking-[0.3em] italic hover:text-red-500 transition-colors">
+                rodrigomarins34@hotmail.com</a>
+            <p class="text-[10px] font-black uppercase tracking-[0.5em] text-slate-600 italic">© 2025 RM
+                CONSULTORIA - TST e Bombeiro Civil.</p>
+            <a href="https://github.com/Helgonhc" target="_blank"
+                class="block mt-4 text-[10px] font-black uppercase tracking-[0.2em] text-slate-700 hover:text-accent transition-colors">
+                Desenvolvido por Helgon Henrique
+            </a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
